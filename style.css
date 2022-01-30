@@ -1,0 +1,153 @@
+header, nav, article, aside, footer{
+    border: 5px solid rgb(0, 136, 204);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+#megismeres{
+    display: grid;
+    grid-template-areas:
+        "he he he he"
+        "na na na na"
+        "as ar ar ar"
+        "fo fo fo fo";
+    color: black;
+}
+
+#galery{
+    display: grid;
+    grid-template-areas:
+        "he he he he"
+        "na na na na"
+        "ar ar ar ar"
+        "fo fo fo fo";
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+    grid-area: he;
+    background-color: rgb(0, 191, 255);
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav{
+    grid-area: na;
+    background-color: rgb(0, 136, 204);
+    font-size: 18px;
+}
+
+nav li{
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+nav li:hover{
+    background-color: rgb(0, 191, 255);
+    border: 0px solid rgb(0, 191, 255);
+    border-radius: 5px;
+}
+
+a{
+    color: rgb(245, 224, 132);
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+article{
+    grid-area: ar;
+    background-color: rgb(0, 191, 255);
+}
+
+.galery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+aside{
+    grid-area: as;
+    background-color: rgb(0, 191, 255);
+}
+
+aside img{
+    max-width: 100%;
+    margin: 3px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 136, 204);
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    grid-area: fo;
+    background-color: rgb(0, 191, 255);
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
