@@ -1,16 +1,12 @@
+/* SZEGÉLY RÉSZLEG */
+
 header, nav, article, aside, footer{
     border: 5px solid rgb(0, 136, 204);
     border-radius: 10px;
     margin: 5px;
 }
 
-
-
-
-
-
-
-
+/* MAIN MEGISMERÉS RÉSZLEG */
 
 #megismeres{
     display: grid;
@@ -22,6 +18,8 @@ header, nav, article, aside, footer{
     color: black;
 }
 
+/* MAIN GALÉRIA RÉSZLEG */
+
 #galery{
     display: grid;
     grid-template-areas:
@@ -32,16 +30,7 @@ header, nav, article, aside, footer{
     color: black;
 }
 
-
-
-
-
-
-
-
-
-
-
+/* FEJLÉC RÉSZLEG */
 
 header{
     grid-area: he;
@@ -51,18 +40,7 @@ header{
     font-size: 25px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* NAVIGÁCIÓS RÉSZLEG */
 
 nav{
     grid-area: na;
@@ -89,15 +67,7 @@ a{
     text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-
+/* ARTICLE RÉSZLEG */
 
 article{
     grid-area: ar;
@@ -124,15 +94,7 @@ article{
     border-radius: 10px;
 }
 
-
-
-
-
-
-
-
-
-
+/* ASIDE RÉSZLEG */
 
 aside{
     grid-area: as;
@@ -147,15 +109,7 @@ aside img{
     border-radius: 5px;
 }
 
-
-
-
-
-
-
-
-
-
+/* FOOTER RÉSZLEG */
 
 footer{
     grid-area: fo;
@@ -165,16 +119,7 @@ footer{
     font-size: 12px;
 }
 
-
-
-
-
-
-
-
-
-
-
+/* RESZPONZIVITÁS */
 
 @media only screen and (max-width: 750px) {
     #megismeres{
@@ -207,18 +152,20 @@ footer{
 }
 
 @media only screen and (max-width: 580px) {
-    .galery{
-        background-color: white;
-        border: none;
-        grid-template-columns: 1fr;
-        display: grid;
-    }
-    
     nav li{
         display: block;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .galery{
+        background-color: white;
+        border: none;
+        grid-template-columns: 1fr;
+        display: grid;
     }
 }
